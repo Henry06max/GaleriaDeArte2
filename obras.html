@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obras</title>
+    <link rel="stylesheet" href="obras.css">
+</head>
+<body>
+    
+    <!-- Barra de navegación -->
+    <header class="navbar">
+        <div class="logo">
+            <img src="logo.png" alt="Hextech Logo">
+            <span>Hextech</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="paisaje.html">Paisajes</a></li>
+                <li><a href="obras.html" class="active">Obras</a></li>
+                <li><a href="Retratos.html">Retratos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Obras Destacadas</h1>
+        </section>
+        <section class="gallery">
+            <div class="art-item" onclick="openModal(1)">
+                <img src="Das-Abendmahl-Restaurierte-Version.jpg" alt="Obra 1">
+                <h3>La Última Cena</h3>
+            </div>
+            <div class="art-item">
+                <img src="creacion.jpeg" alt="Obra 2" onclick="openModal(2)">
+                <h3>La Creación de Adán</h3>
+            </div>
+            <div class="art-item" onclick="openModal(3)">
+                <img src="escuela.jpeg" alt="Obra 3">
+                <h3>La Escuela de Atenas</h3>
+            </div>
+        </section>
+    </main>
+
+     <!-- Ventana Modal -->
+     <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img id="modal-img" src="" alt="Imagen ampliada">
+            <div id="modal-description" class="description"></div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Galería de Arte - Obras Clásicas</p>
+    </footer>
+
+    <script src="obras.js"></script>
+</body>
+</html>

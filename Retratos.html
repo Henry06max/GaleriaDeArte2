@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retratos Famosos</title>
+    <link rel="stylesheet" href="Retratos.css">
+</head>
+<body>
+        <header class="navbar">
+            <div class="logo">
+                <img src="logo.png" alt="Hextech Logo">
+                <span>Hextech</span>
+            </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="paisaje.html">Paisajes</a></li>
+                <li><a href="obras.html">Obras</a></li>
+                <li><a href="Retratos.html" class="active">Retratos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Retratos Famosos</h2>
+        <div class="gallery">
+            <div class="portrait" data-description="La Mona Lisa, obra maestra de Leonardo da Vinci.">
+                <img src="MONALISA.jpg" alt="Mona Lisa">
+                <p>Mona Lisa</p>
+            </div>
+            <div class="portrait" data-description="La Joven de la Perla, conocida como la Mona Lisa del norte.">
+                <img src="Retratos.jpeg" alt="La Joven de la Perla">
+                <p>La Joven de la Perla</p>
+            </div>
+            <div class="portrait" data-description="Autorretrato de Frida Kahlo, una de las artistas mexicanas más influyentes.">
+                <img src="frida.jpg" alt="Frida Kahlo">
+                <p>Frida Kahlo</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Modal -->
+    <div class="modal" id="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modal-image" alt="Imagen ampliada">
+        <div id="caption"></div>
+    </div>
+
+    <script src="Retratos.js"></script>
+</body>
+</html>

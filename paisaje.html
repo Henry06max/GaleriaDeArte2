@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paisajes - Galería de Arte</title>
+    <link rel="stylesheet" href="paisaje.css">
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <header class="navbar">
+        <div class="logo">
+            <img src="logo.png" alt="Hextech Logo">
+            <span>Hextech</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="paisaje.html" class="active">Paisajes</a></li>
+                <li><a href="obras.html">Obras</a></li>
+                <li><a href="Retratos.html">Retratos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+   <!-- Sección de Paisajes -->
+   <section id="paisaje" class="gallery-section">
+    <h2 class="section-title">Paisajes</h2>
+    <div class="gallery-grid">
+        <div class="gallery-item" onclick="openModal('Bierstadt_Albert_The_Falls_of_St._Anthony.jpg', 'Las cataratas de San Antonio - Albert Bierstadt')">
+            <img src="Bierstadt_Albert_The_Falls_of_St._Anthony.jpg" alt="Las cataratas de San Antonio - Albert Bierstadt">
+            <div class="gallery-overlay">Albert Bierstadt</div>
+        </div>
+        <div class="gallery-item" onclick="openModal('Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg', 'La noche estrellada - Vincent van Gogh')">
+            <img src="Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg" alt="La noche estrellada - Vincent van Gogh">
+            <div class="gallery-overlay">Vincent van Gogh</div>
+        </div>
+        <div class="gallery-item" onclick="openModal('1280px-Vermeer-view-of-delft.jpg', 'Vista de Delft - Johannes Vermeer')">
+            <img src="1280px-Vermeer-view-of-delft.jpg" alt="Vista de Delft - Johannes Vermeer">
+            <div class="gallery-overlay">Johannes Vermeer</div>
+        </div>
+        <div class="gallery-item" onclick="openModal('1904,_Cézanne,_Mont_Sainte-Victoire.jpg', 'La montaña Sainte-Victoire - Paul Cézanne')">
+            <img src="1904,_Cézanne,_Mont_Sainte-Victoire.jpg" alt="La montaña Sainte-Victoire - Paul Cézanne">
+            <div class="gallery-overlay">Paul Cézanne</div>
+        </div>
+    </div>
+</section>
+<!-- Ventana Modal -->
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img id="modal-img" src="" alt="Imagen ampliada">
+        <div id="modal-description" class="description"></div>
+    </div>
+</div>
+
+<script src="paisaje.js"></script> <!-- Enlace al archivo JavaScript -->
+</body>
+</html>
